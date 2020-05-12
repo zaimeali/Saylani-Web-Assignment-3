@@ -1,0 +1,34 @@
+/* Common Style */
+
+
+/* Main Style */
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: url('../img/background/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+}
+
+/* Header Style */
+
+.logo a img{
+    height: 90px;
+}
+
+.navbar .navbar-collapse{
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse
+    {
+        background-color:#FA0;
+    }
+}
