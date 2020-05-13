@@ -16,24 +16,112 @@ body{
     overflow-y: auto;
 }
 
-/* Header Style */
+/* 
+    Header Style 
+*/
 
 .bg-head{
     background-color: #445268;
 }
 
+/* Header First */
 .first-col{
     list-style-type: none;
+    padding-left: 0;
+    margin: 8px 0;
 }
 
 .first-col li{
     display: inline;
 }
 
-.first-img{
-    height: 28px;
-    width: 28px;
+.first-col li a{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    border: none;
 }
+
+.help a img{
+    margin-top: -4px;
+}
+
+.first-img{
+    height: 24px;
+    width: 24px;
+    margin-top: -3px;
+}
+
+/* Header Second */
+.news{
+    color: white;
+    margin: 8px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.news span{
+    font-weight: 600;
+    color: #fee97d;
+    font-size: 17px;
+}
+
+.news .time-define{
+    color: #ffe5c2;
+}
+
+.news .time-define:hover{
+    color: #f37c7c;
+    font-weight: 600;
+}
+
+.news i{
+    color: #fee97d;
+}
+
+.news i:hover{
+    color: #f37c7c;
+}
+
+/* Header Third */
+.social{
+    list-style-type: none;
+    margin: 8px 0;
+}
+
+.social li{
+    display: inline;
+}
+
+.social-link{
+    margin: 0 10px;
+}
+
+.social-link a{
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.social-link .facebook:hover{
+    color: white;
+    background-color: rgb(63, 121, 236);
+}
+
+.social-link .twitter:hover{
+    color: #1DA1F2;
+    background-color: white;
+}
+
+.social-link .google:hover{
+    color: #F4B400;
+    background-color: white;
+}
+
+
+
 
 .logo a img{
     height: 90px;
