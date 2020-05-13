@@ -121,14 +121,44 @@ body{
 }
 
 
+/* Nav Bar */
 
+.logo{
+    margin-left: 100px;
+}
 
 .logo a img{
-    height: 90px;
+    height: 75px;
 }
 
 .navbar .navbar-collapse{
     text-align: center;
+}
+
+.navigation{
+    margin-right: 150px;
+}
+
+.navigation li{
+    margin-right: 10px;
+}
+
+.navigation li a{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+}   
+
+.navigation li a object{
+    margin-bottom: -4px;
+}
+
+.navigation li:hover{
+    background-color: #d42626;
+    border-radius: 5px;
+}
+.navigation li a:hover{
+    color: white !important;
 }
 
 @media (max-width: 767px) {
@@ -136,4 +166,13 @@ body{
     {
         background-color:#FA0;
     }
+}
+
+object{
+    width: 20px;
+    height: 20px;
+}
+
+.bg-menu:hover{
+    background-color: #7a1212 !important;
 }
