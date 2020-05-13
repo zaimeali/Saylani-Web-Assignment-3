@@ -18,6 +18,23 @@ body{
 
 /* Header Style */
 
+.bg-head{
+    background-color: #445268;
+}
+
+.first-col{
+    list-style-type: none;
+}
+
+.first-col li{
+    display: inline;
+}
+
+.first-img{
+    height: 28px;
+    width: 28px;
+}
+
 .logo a img{
     height: 90px;
 }
