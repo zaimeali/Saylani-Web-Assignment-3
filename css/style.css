@@ -129,6 +129,9 @@ body{
 
 .logo a img{
     height: 75px;
+    border-bottom: 4px solid beige;
+    border-top: 4px solid beige;
+    border-radius: 3px;
 }
 
 .navbar .navbar-collapse{
@@ -140,11 +143,11 @@ body{
 }
 
 .navigation li{
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .navigation li a{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 25px;
 }   
@@ -162,9 +165,24 @@ body{
 }
 
 @media (max-width: 767px) {
-    .navbar-collapse
-    {
-        background-color:#FA0;
+    .first-col{
+        /* padding-left: 40px; */
+        /* padding-right: 40px; */
+    }
+    .social{
+        padding-left: 0px;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    .navbar-collapse{
+        background-color: #ba1414;
+    }
+    .navigation{
+        margin-right: 0;
+    }
+    .navigation li{
+        margin-right: 0;
     }
 }
 
