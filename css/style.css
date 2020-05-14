@@ -11,9 +11,9 @@ html, body{
 
 body{
     background: url('../img/background/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover 100%;
     overflow-y: auto;
+    background-repeat: repeat-y;
 }
 
 /* 
@@ -197,7 +197,58 @@ object{
 
 
 /* Banner */
+.banner{
+    margin-top: -1px;
+}
+
 .image-banner{
     height: 550px;
     width: 100%;
+}
+
+/* Recommendation */
+.recommendation{
+    padding: 50px 0;
+}
+
+.recommend{
+    padding-bottom: 20px;
+}
+
+.recommend-heading{
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 650;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.recommend-item-card{
+    border-radius: 5px;
+}
+
+.recommend-item-card:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.recommend-item-card:hover .recommend-item-title{
+    color: #d42626;
+}
+
+.recommend-item-title{
+    text-align: center;
+    font-weight: 600;
+}
+
+.recommend-item-image{
+    padding: 0 15px;
+}
+
+.feature-list li{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.recomment-item-btn{
+
 }
