@@ -194,3 +194,10 @@ object{
 .bg-menu:hover{
     background-color: #7a1212 !important;
 }
+
+
+/* Banner */
+.image-banner{
+    height: 550px;
+    width: 100%;
+}
