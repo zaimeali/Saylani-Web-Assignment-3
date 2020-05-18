@@ -302,6 +302,10 @@ object{
 /* Offer */
 .offers{
     margin: 30px auto;
+    background-color: #353d4628;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 15px;
 }
 
 .offer-card{
@@ -326,6 +330,10 @@ object{
 
 .offer-body{
     height: auto !important;
+}
+
+.color-change{
+    
 }
 
 .offer-link{
