@@ -134,6 +134,10 @@ body{
     border-radius: 3px;
 }
 
+.logo a img:hover{
+    border-color: #d426266e;
+}
+
 .navbar .navbar-collapse{
     text-align: center;
 }
@@ -196,7 +200,12 @@ object{
 }
 
 
+
 /* Banner */
+.main{
+    position: relative !important;
+}
+
 .banner{
     margin-top: -1px;
 }
@@ -249,6 +258,23 @@ object{
     font-weight: 500;
 }
 
-.recomment-item-btn{
+.recommend-item-btn{
+    margin-left: 25% !important;
+}
 
+.card-body{
+    height: 330px !important;
+}
+
+.amount{
+    font-weight: 700;
+}
+
+.spacing{
+    margin-top: 35px !important;
+}
+
+.recommend-item-card:hover .item-title-divider{
+    border-color: #d4262636;
+    border-top-width: 1.6px !important;
 }
