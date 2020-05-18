@@ -122,7 +122,13 @@ body{
 
 
 /* Nav Bar */
-
+/* .navbar{
+    
+    top: 47px !important;
+    width: 100%;
+    float: left;
+    position:fixed !important;
+} */
 .logo{
     margin-left: 100px;
 }
@@ -277,4 +283,85 @@ object{
 .recommend-item-card:hover .item-title-divider{
     border-color: #d4262636;
     border-top-width: 1.6px !important;
+}
+
+.price{
+    margin-left: 19% !important;
+}
+
+@media (max-width: 516px){
+    .price{
+        margin-left: 35% !important;
+    }
+    .recommend-item-btn{
+        margin-left: 38% !important;
+    }
+}
+
+
+/* Offer */
+.offers{
+    margin: 30px auto;
+}
+
+.offer-card{
+    padding: 0 !important;
+}
+
+.offer-title-card{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0px !important;
+}
+
+.offer-title-card a{
+    color: #212529;
+}
+
+.offer-title-card a:hover{
+    text-decoration: none;
+    color: rgb(94, 93, 93);
+    font-weight: 700;
+}
+
+.offer-body{
+    height: auto !important;
+}
+
+.offer-link{
+    text-decoration: none;
+}
+
+.offer-link:hover{
+    text-decoration: none;
+}
+
+.offer-item-card:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.offer-item-title{
+    color: #212529;
+    font-weight: 600;
+}
+
+.offer-item-card:hover .offer-title-divider{
+    border-color: #d42626a1;
+}
+
+.offer-item-card:hover .offer-item-title, .offer-item-card:hover .offer-item-price{
+    color: #d42626;
+}
+
+.offer-item-feature li{
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.offer-item-price{
+    color: #212529;
+    font-weight: 550;
+}
+
+.old-price{
+    text-decoration: line-through;
 }
