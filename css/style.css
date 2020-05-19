@@ -434,3 +434,29 @@ object.category-card-svg{
 .gift img{
     height: 233px !important;
 }
+
+/* FAQs */
+.faqs{
+    position: relative;
+    overflow: hidden;
+    margin: 30px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    /* background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+
+}
+
+.faqs img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.faq-body{
+    height: auto !important;
+}
