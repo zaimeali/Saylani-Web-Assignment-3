@@ -373,3 +373,64 @@ object{
 .old-price{
     text-decoration: line-through;
 }
+
+
+/* Categories */
+.product-category{
+    margin: 80px auto;
+}
+
+.category-heading{
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.category-see-more{
+    margin-top: 40px;
+}
+
+.category-card{
+    padding: 15px 10px;
+    border-radius: 20px !important;
+}
+
+.category-card-img{
+    background-color: rgba(90, 88, 88, 0.568);
+    border-radius: 20px;
+}
+
+.category-card-img:hover{
+    background-color: rgba(90, 88, 88, 0.281);
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.category-card-img:hover .category-card-title{
+    background-color: #d42626d2;
+}
+
+.category-card-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 45%;
+    text-shadow: 2px 2px #1a1a1a88, -2px 2px #1a1a1a88;
+    background-color: rgba(90, 88, 88, 0.726);
+
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+
+    border-radius: 10px;
+    
+}
+
+object.category-card-svg{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-bottom: -5px !important;
+}
+
+.gift img{
+    height: 233px !important;
+}
