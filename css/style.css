@@ -460,3 +460,13 @@ object.category-card-svg{
 .faq-body{
     height: auto !important;
 }
+
+.faq-question{
+    color: black !important;
+}
+
+.faq-question:hover{
+    text-decoration: none !important;
+    color: #d42626 !important;
+    background-color: rgba(0, 0, 0, 0.027);
+}
