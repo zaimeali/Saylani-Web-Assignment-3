@@ -553,3 +553,20 @@ object.category-card-svg{
 #inputPassword{
     border-radius: 0 0 5px 5px !important;
 }
+
+/* SIGN UP: Register */
+.signup-btn{
+    font-weight: 600 !important;
+}
+
+#registerEmail, #registerName, #registerNumber{
+    border-radius: 5px !important;
+}
+
+#inputPassword1{
+    border-radius: 5px 5px 0 0 !important;
+}
+
+#inputConfirmPassword{
+    border-radius: 0 0 5px 5px !important;
+}
