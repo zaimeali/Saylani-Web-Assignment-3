@@ -378,6 +378,7 @@ object{
 /* Categories */
 .product-category{
     margin: 80px auto;
+    margin-bottom: 40px !important;
 }
 
 .category-heading{
@@ -388,7 +389,7 @@ object{
 }
 
 .category-see-more{
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .category-card{
@@ -470,3 +471,5 @@ object.category-card-svg{
     color: #d42626 !important;
     background-color: rgba(0, 0, 0, 0.027);
 }
+
+/* Companies */
