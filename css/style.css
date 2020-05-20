@@ -529,3 +529,27 @@ object.category-card-svg{
     color: #d42626b9;
     font-weight: 600;
 }
+
+
+/* LOGIN PAGE */
+
+.login-page{
+    background: #f5f5f5 !important;
+}
+
+.form-heading{
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}
+
+.form-heading:hover{
+    color: #aa3737;
+}
+
+#inputEmail{
+    border-radius: 5px 5px 0 0 !important;
+}
+
+#inputPassword{
+    border-radius: 0 0 5px 5px !important;
+}
