@@ -570,3 +570,24 @@ object.category-card-svg{
 #inputConfirmPassword{
     border-radius: 0 0 5px 5px !important;
 }
+
+
+/* Contact Us */
+.contact-us{
+    background: url('../img/background/bg2.png');
+    background-size: cover;
+    overflow-y: auto;
+}
+
+.contact{
+    padding-top: 80px;
+    padding-bottom: 50px !important;
+}
+
+.contact-form{
+    background-color: #d42626;
+}
+
+.contact-container{
+    background-color: #f37c7c;
+}
