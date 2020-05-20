@@ -626,6 +626,7 @@ object.category-card-svg{
 .contact-info{
     
     border-radius: 10px !important;
+    margin-bottom: 30px;
 }
 
 .contact-info:hover{
