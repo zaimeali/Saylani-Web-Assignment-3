@@ -584,10 +584,62 @@ object.category-card-svg{
     padding-bottom: 50px !important;
 }
 
-.contact-form{
-    background-color: #d42626;
+.contact-container{
+    background-color: #e9ecef;
+    border-radius: 10px;
 }
 
-.contact-container{
-    background-color: #f37c7c;
+.contact-heading{
+    
+    /* background-color: #c9c9c9a4; */
+    padding-top: 30px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.contact-head{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact-subhead{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.contact-form{
+    padding: 40px 25px;
+    margin-bottom: 30px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.contact-form:hover{
+    /* background-color: #dfdfdf; */
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.red{
+    color: red;
+}
+
+.contact-info{
+    
+    border-radius: 10px !important;
+}
+
+.contact-info:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.contact-card{
+    border-radius: 10px !important;
+}
+
+.contact-card-body{
+    height: auto !important;
+}
+
+.contact-info-body{
+    font-size: 16px !important;
 }
