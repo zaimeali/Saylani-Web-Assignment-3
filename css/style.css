@@ -744,3 +744,24 @@ object.category-card-svg{
 .f-right{
     float: right !important;
 }
+
+/* checkout */
+.checkout-bg{
+    border-radius: 10px;
+}
+
+.checkout-bg:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.checkout-head{
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(190, 190, 190, 0.445);
+    padding-bottom: 20px !important;
+}
+
+.checkout-form{
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+}

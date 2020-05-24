@@ -18,7 +18,7 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Lato:wght@300;400;700;900&family=Merriweather+Sans:wght@300;400;700;800&family=Nunito+Sans:wght@300;400;600;700;800;900&family=Open+Sans:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
     </head>
-    <body>
+    <body class="">
 
         <!-- Headline -->
         <div class="col-md-12 bg-head">
@@ -100,7 +100,7 @@
                             <a class="nav-link" href="wishlist.html">Wishlist <object data="img/icons/heart.svg" type="image/svg+xml"></object></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Cart <object data="img/icons/shopping-cart.svg" type="image/svg+xml"></object></a>
+                            <a class="nav-link" href="cart.html">Cart <object data="img/icons/shopping-cart.svg" type="image/svg+xml"></object></a>
                         </li>
                     </ul>
                 </div>
@@ -110,104 +110,110 @@
 
 
         
-        <div class="cart mt-5 mb-5">
+        <div class="checkout mt-5 mb-5">
             <div class="container">
-                <div class="row">
-                    <table id="cart" class="table table-hover table-condensed">
-                        <thead class="cart-head">
-                            <tr>
-                                <th class="cart-heading cart-id-heading">Product ID</th>
-                                <th class="cart-heading">Product</th>
-                                <th class="text-center cart-heading">Price</th>
-                                <th class="text-center cart-heading">Quantity</th>
-                                <th class="text-center cart-heading">Subtotal</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody class="cart-body">
-                            <tr class="cart-row" id="cart_1">
-                                <td class="cart-product-id cart-product-row">CMG-15432</td>
-                                <td class="cart-product-row">
-                                    <div class="row">
-                                        <div class="col-sm-2 hidden-xs"><img class="img-responsive image-row" src="https://static-01.daraz.pk/p/850ad730f87c58cdfe999ebd4e0108a9.jpg_120x120q80.jpg" alt="Black Mouse Gaming"/></div>
-                                        <div class="col-sm-10">
-                                            <h4 class="heading-row">Black 7 Mouse</h4>
-                                            <p>Black 7 Colour LED Wired Gaming Mouse For PC Computer Laptop.</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="cart-product-row price-row">
-                                    Rs. <span class="amount-row" id="cart-product-1">385</span>
-                                </td>
-                                <td class="cart-product-row quantity-row">
-                                    <input id="cart-quantity-1" type="number" class="form-control text-center" min="0"  value="2" onchange="changeValue('cart-product-1', 'cart-quantity-1', 'cartProductPrice1')">
-                                </td>
-                                <td class="cart-product-row subtotal-row" id="cartProductPrice1">
-                                    770
-                                </td>
-                                <td class="cart-product-row">
-                                    <button class="btn btn-danger btn-sm" onclick="deleteCart('cart_1')"><i class="fa fa-trash-o"></i></button>								
-                                </td>
-                            </tr>
-                            <tr class="dis-block" id="cart_2">
-                                <td class="cart-product-id cart-product-row">MRC-23429</td>
-                                <td class="cart-product-row">
-                                    <div class="row">
-                                        <div class="col-sm-2 hidden-xs"><img class="img-responsive image-row" src="https://static-01.daraz.pk/p/b9f83cf704be56b06a3f80aa84a9cd79.jpg_120x120q80.jpg" alt="Real Me Mobile"/></div>
-                                        <div class="col-sm-10">
-                                            <h4 class="heading-row">Realme C3</h4>
-                                            <p>6.5 Inch Display - 3GB RAM - 32GB ROM - Finger Print Sensor - Dual Sim - Blue.</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="cart-product-row price-row">
-                                    Rs. <span class="amount-row" id="cart-product-2">20,999</span>
-                                </td>
-                                <td class="cart-product-row quantity-row">
-                                    <input id="cart-quantity-2" type="number" class="form-control text-center" min="0" value="1" onchange="changeValue('cart-product-2', 'cart-quantity-2', 'cartProductPrice2')">
-                                </td>
-                                <td class="cart-product-row subtotal-row" id="cartProductPrice2">
-                                    20,999
-                                </td>
-                                <td class="cart-product-row">
-                                    <button class="btn btn-danger btn-sm" onclick="deleteCart('cart_2')"><i class="fa fa-trash-o"></i></button>								
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td></td>
-                                <td colspan="2" class="hidden-xs"></td>
-                                <td class="hidden-xs text-center total-row">
-                                    <strong>
-                                        Total: <span class="total-amount-row">Rs <span id="total">21,769</span></span>
-                                    </strong>
-                                </td>
-                                <td></td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
+                <div class="bg-light checkout-bg">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mt-4 mb-4 text-center">
+                                <img src="img/logo/logo.png" height="72" width="72" alt="Logo" class="d-block mx-auto mb-4">
 
-                <!-- Cart Nav Btn -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="index.html" class="btn btn-info cart-nav-btn f-left">
-                            <svg class="bi bi-arrow-left-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path fill-rule="evenodd" d="M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z"/>
-                                <path fill-rule="evenodd" d="M11.5 8a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z"/>
-                            </svg>
-                            Continue Shopping 
-                        </a>
-                        <a href="check-out.html" class="btn btn-success cart-nav-btn f-right">
-                            Checkout
-                            <svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
-                                <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
-                            </svg>
-                        </a>
+                                <h2 class="checkout-head">Checkout</h2>
+                            </div>
+                            <div class="row checkout-form">
+                                <div class="col-md-12">
+                                    <h4 class="mb-3">Billing Address</h4>
+                                    <form action="#" method="POST">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="firstName">First Name</label>
+                                                <input type="text" id="firstName" class="form-control">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="lastName">Last Name</label>
+                                                <input type="text" id="lastName" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="username">Username</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            @
+                                                        </span>
+                                                    </div>
+                                                    <input type="text" id="username" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <label for="email">Email</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <svg class="bi bi-envelope" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                                                                <path d="M.05 3.555C.017 3.698 0 3.847 0 4v.697l5.803 3.546L0 11.801V12c0 .306.069.596.192.856l6.57-4.027L8 9.586l1.239-.757 6.57 4.027c.122-.26.191-.55.191-.856v-.2l-5.803-3.557L16 4.697V4c0-.153-.017-.302-.05-.445L8 8.414.05 3.555z"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <input type="email" id="email" class="form-control" placeholder="abc@example.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7 mb-3">
+                                                <label for="address">Address</label>
+                                                <textarea id="address" class="form-control" rows="4"></textarea>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="country">Country</label>
+                                                        <select name="" id="country" class="custom-select d-block w-100">
+                                                            <option value="" selected disabled>Choose..</option>
+                                                            <option value="pak">Pakistan</option>
+                                                            <option value="tur">Turkey</option>
+                                                            <option value="mal">Malaysia</option>
+                                                            <option value="qtr">Qatar</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="zip">Zip Code</label>
+                                                        <input type="text" class="form-control" id="zip">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="mb-3">
+                                        <h4 class="mb-3">Payment</h4>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="payment" id="credit_card" value="credit">
+                                                    <label class="form-check-label" for="credit_card">
+                                                        Credit Card
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="payment" id="cod" value="cod">
+                                                    <label class="form-check-label" for="cod">
+                                                        Cash on Delivery
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="mb-4">
+                                        <button class="btn btn-primary btn-block btn-lg mb-5" type="submit">Checkout</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
