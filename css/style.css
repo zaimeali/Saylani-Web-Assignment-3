@@ -765,3 +765,17 @@ object.category-card-svg{
     padding-left: 80px !important;
     padding-right: 80px !important;
 }
+
+/* Checkout Done */
+.checkout-done{
+    font-weight: 700;
+}
+
+.checkout-done:hover{
+    color: #d42626;
+}
+
+.back-arrow-btn{
+    margin-top: -3px !important;
+    margin-right: 3px !important;
+}
