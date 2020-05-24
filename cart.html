@@ -113,44 +113,80 @@
         <div class="cart mt-5 mb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-1 cart-table-head">
-                                <h3 class="cart-table-header">Product ID</h3>
-                            </div>
-                            <div class="col-md-6 cart-table-head">
-                                <h3 class="cart-table-header">Product</h3>
-                            </div>
-                            <div class="col-md-1 cart-table-head">
-                                <h3 class="cart-table-header">Price</h3>
-                            </div>
-                            <div class="col-md-1 cart-table-head">
-                                <h3 class="cart-table-header">Quantity</h3>
-                            </div>
-                            <div class="col-md-1 cart-table-head">
-                                <h3 class="cart-table-header">
-                                    Subtotal
-                                </h3>
-                            </div>
-                            <div class="col-md-1 cart-table-head"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-1"></div>
-                            <div class="col-md-1"></div>
-                            <div class="col-md-1"></div>
-                            <div class="col-md-2"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-1"></div>
-                            <div class="col-md-1"></div>
-                            <div class="col-md-1"></div>
-                            <div class="col-md-2"></div>
-                        </div>
-                    </div>
+                    <table id="cart" class="table table-hover table-condensed">
+                        <thead class="cart-head">
+                            <tr>
+                                <th class="cart-heading cart-id-heading">Product ID</th>
+                                <th class="cart-heading">Product</th>
+                                <th class="text-center cart-heading">Price</th>
+                                <th class="text-center cart-heading">Quantity</th>
+                                <th class="text-center cart-heading">Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="cart-body">
+                            <tr class="cart-row" id="cart_1">
+                                <td class="cart-product-id cart-product-row">CMG-15432</td>
+                                <td class="cart-product-row">
+                                    <div class="row">
+                                        <div class="col-sm-2 hidden-xs"><img class="img-responsive image-row" src="https://static-01.daraz.pk/p/850ad730f87c58cdfe999ebd4e0108a9.jpg_120x120q80.jpg" alt="Black Mouse Gaming"/></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="heading-row">Black 7 Mouse</h4>
+                                            <p>Black 7 Colour LED Wired Gaming Mouse For PC Computer Laptop.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart-product-row price-row">
+                                    Rs. <span class="amount-row" id="cart-product-1">385</span>
+                                </td>
+                                <td class="cart-product-row quantity-row">
+                                    <input id="cart-quantity-1" type="number" class="form-control text-center" min="0"  value="2" onchange="changeValue('cart-product-1', 'cart-quantity-1', 'cartProductPrice1')">
+                                </td>
+                                <td class="cart-product-row subtotal-row" id="cartProductPrice1">
+                                    770
+                                </td>
+                                <td class="cart-product-row">
+                                    <button class="btn btn-danger btn-sm" onclick="deleteCart('cart_1')"><i class="fa fa-trash-o"></i></button>								
+                                </td>
+                            </tr>
+                            <tr class="dis-block" id="cart_2">
+                                <td class="cart-product-id cart-product-row">MRC-23429</td>
+                                <td class="cart-product-row">
+                                    <div class="row">
+                                        <div class="col-sm-2 hidden-xs"><img class="img-responsive image-row" src="https://static-01.daraz.pk/p/b9f83cf704be56b06a3f80aa84a9cd79.jpg_120x120q80.jpg" alt="Real Me Mobile"/></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="heading-row">Realme C3</h4>
+                                            <p>6.5 Inch Display - 3GB RAM - 32GB ROM - Finger Print Sensor - Dual Sim - Blue.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart-product-row price-row">
+                                    Rs. <span class="amount-row" id="cart-product-2">20,999</span>
+                                </td>
+                                <td class="cart-product-row quantity-row">
+                                    <input id="cart-quantity-2" type="number" class="form-control text-center" min="0" value="1" onchange="changeValue('cart-product-2', 'cart-quantity-2', 'cartProductPrice2')">
+                                </td>
+                                <td class="cart-product-row subtotal-row" id="cartProductPrice2">
+                                    20,999
+                                </td>
+                                <td class="cart-product-row">
+                                    <button class="btn btn-danger btn-sm" onclick="deleteCart('cart_2')"><i class="fa fa-trash-o"></i></button>								
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" class="hidden-xs"></td>
+                                <td class="hidden-xs text-center total-row">
+                                    <strong>
+                                        Total: <span class="total-amount-row">Rs <span id="total">21,769</span></span>
+                                    </strong>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
 
                 <!-- Cart Nav Btn -->
