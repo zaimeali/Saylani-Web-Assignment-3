@@ -18,7 +18,7 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Lato:wght@300;400;700;900&family=Merriweather+Sans:wght@300;400;700;800&family=Nunito+Sans:wght@300;400;600;700;800;900&family=Open+Sans:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
     </head>
-    <body>
+    <body class="wishlist-body">
 
         <!-- Headline -->
         <div class="col-md-12 bg-head">
@@ -117,10 +117,10 @@
                         <thead class="wishlist-head">
                             <tr>
                                 <th class="wishlist-heading">Product</th>
-                                <th class="text-center wishlist-heading">Price</th>
-                                <th class="text-center wishlist-heading">Stock Status</th>
-                                <th class="text-center wishlist-heading">Add to Cart</th>
-                                <th class="text-center wishlist-heading">Remove</th>
+                                <th class="text-center wishlist-heading" id="priceWishlist">Price</th>
+                                <th class="text-center wishlist-heading" id="stock_status">Stock Status</th>
+                                <th class="text-center wishlist-heading" id="addCart">Add to Cart</th>
+                                <th class="text-center wishlist-heading" id="removeList">Remove</th>
                             </tr>
                         </thead>
                         <tbody class="wishlist-body">
@@ -134,22 +134,44 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td class="cart-product-row price-row">
-                                    Rs. <span class="amount-row" id="cart-product-1">385</span>
+                                <td class="wishlist-product-row text-center align-middle">
+                                    Rs. <span class="amount-row">385</span>
                                 </td>
-                                <td class="cart-product-row quantity-row">
-                                    <input id="cart-quantity-1" type="number" class="form-control text-center" min="0"  value="2" onchange="changeValue('cart-product-1', 'cart-quantity-1', 'cartProductPrice1')">
+                                <td class="wishlist-product-row text-center align-middle">
+                                    <span class="wishlist-stock" id="green">In Stock</span>
                                 </td>
-                                <td class="cart-product-row subtotal-row" id="cartProductPrice1">
-                                    770
+                                <td class="wishlist-product-row text-center align-middle">
+                                    <button class="btn btn-success btn-sm" onclick="addToCart('wishlist_1')"><i class="fa fa-shopping-cart"></i></button>	
                                 </td>
-                                <td class="cart-product-row">
-                                    <button class="btn btn-danger btn-sm" onclick="deleteCart('cart_1')"><i class="fa fa-trash-o"></i></button>								
+                                <td class="wishlist-product-row text-center align-middle">
+                                    <button class="btn btn-danger btn-sm" onclick="removeFromWishlist('wishlist_1')"><i class="fa fa-trash-o"></i></button>								
                                 </td>
                             </tr>
-                            <tr class="dis-block" id="cart_2">
-                                <td class="cart-product-id cart-product-row">MRC-23429</td>
-                                <td class="cart-product-row">
+                            <tr class="wishlist-row" id="wishlist_2">
+                                <td class="wishlist-product-row">
+                                    <div class="row">
+                                        <div class="col-sm-2 hidden-xs"><img class="img-responsive image-row" src="https://static-01.daraz.pk/p/1c31319c53fe7f630da0bdb8c135bfa4.jpg_120x120q80.jpg" alt="Apple MacBook"/></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="heading-row">Apple MacBook 13.3</h4>
+                                            <p>Intel Core 2 Duo, 4GB RAM with free Apple Mouse Handfree.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="wishlist-product-row text-center align-middle">
+                                    Rs. <span class="amount-row">40,000</span>
+                                </td>
+                                <td class="wishlist-product-row text-center align-middle">
+                                    <span class="wishlist-stock" id="red">Out of Stock</span>
+                                </td>
+                                <td class="wishlist-product-row text-center align-middle">
+                                    <button class="btn btn-success btn-sm" onclick="addToCart('wishlist_2')"><i class="fa fa-shopping-cart"></i></button>	
+                                </td>
+                                <td class="wishlist-product-row text-center align-middle">
+                                    <button class="btn btn-danger btn-sm" onclick="removeFromWishlist('wishlist_2')"><i class="fa fa-trash-o"></i></button>								
+                                </td>
+                            </tr>
+                            <tr class="wishlist-row" id="wishlist_3">
+                                <td class="wishlist-product-row">
                                     <div class="row">
                                         <div class="col-sm-2 hidden-xs"><img class="img-responsive image-row" src="https://static-01.daraz.pk/p/b9f83cf704be56b06a3f80aa84a9cd79.jpg_120x120q80.jpg" alt="Real Me Mobile"/></div>
                                         <div class="col-sm-10">
@@ -158,32 +180,20 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td class="cart-product-row price-row">
-                                    Rs. <span class="amount-row" id="cart-product-2">20,999</span>
+                                <td class="wishlist-product-row text-center align-middle">
+                                    Rs. <span class="amount-row">20,999</span>
                                 </td>
-                                <td class="cart-product-row quantity-row">
-                                    <input id="cart-quantity-2" type="number" class="form-control text-center" min="0" value="1" onchange="changeValue('cart-product-2', 'cart-quantity-2', 'cartProductPrice2')">
+                                <td class="wishlist-product-row text-center align-middle">
+                                    <span class="wishlist-stock" id="green">In Stock</span>
                                 </td>
-                                <td class="cart-product-row subtotal-row" id="cartProductPrice2">
-                                    20,999
+                                <td class="wishlist-product-row text-center align-middle">
+                                    <button class="btn btn-success btn-sm" onclick="addToCart('wishlist_3')"><i class="fa fa-shopping-cart"></i></button>	
                                 </td>
-                                <td class="cart-product-row">
-                                    <button class="btn btn-danger btn-sm" onclick="deleteCart('cart_2')"><i class="fa fa-trash-o"></i></button>								
+                                <td class="wishlist-product-row text-center align-middle">
+                                    <button class="btn btn-danger btn-sm" onclick="removeFromWishlist('wishlist_3')"><i class="fa fa-trash-o"></i></button>								
                                 </td>
                             </tr>
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <td></td>
-                                <td colspan="2" class="hidden-xs"></td>
-                                <td class="hidden-xs text-center total-row">
-                                    <strong>
-                                        Total: <span class="total-amount-row">Rs <span id="total">21,769</span></span>
-                                    </strong>
-                                </td>
-                                <td></td>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>

@@ -1,3 +1,5 @@
+// Cart Functions
+
 function deleteCart(cart_id) {
     let remove = confirm("Are you sure you want to remove it?");
     
@@ -40,3 +42,15 @@ function changeValue(price, quantity, sub, flag = false) {
 
 changeValue('cart-product-1', 'cart-quantity-1', 'cartProductPrice1');
 changeValue('cart-product-2', 'cart-quantity-2', 'cartProductPrice2');
+
+
+// Wishlist Functions
+function addToCart(id){
+    alert('Item is Added into the Cart');
+    document.getElementById(id).style.display = 'none';
+}
+
+function removeFromWishlist(id) {
+    alert('Item is Removed from the wishlist');
+    document.getElementById(id).style.display = 'none';
+}

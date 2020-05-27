@@ -781,30 +781,36 @@ object.category-card-svg{
 }
 
 /* Wishlist */
-.wishlist{
-
-}
-
-#wishlist{
-
-}
-
-.wishlist-head{
-
+.wishlist-body{
+    background: #f8f9fa !important;
 }
 
 .wishlist-heading{
-
+    font-size: 18px !important;
+    color: #2a2a2ad8;
 }
 
-.wishlist-body{
-
+#stock_status{
+    width: 12% !important;
 }
 
-.wishlist-row{
-
+#priceWishlist{
+    width: 10% !important;
 }
 
-.wishlist-product-row{
-    
+#red{
+    color: rgb(235, 66, 66);
+}
+
+#green{
+    color: rgb(38, 184, 38);
+}
+
+.wishlist-stock{
+    font-size: 14px;
+}
+
+#addCart, #removeList{
+    font-size: 14px !important;
+    width: 10% !important;
 }
