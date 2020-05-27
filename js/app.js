@@ -54,3 +54,8 @@ function removeFromWishlist(id) {
     alert('Item is Removed from the wishlist');
     document.getElementById(id).style.display = 'none';
 }
+
+// Offers Function
+function addToCart(){
+    alert('Item is Added into the Cart');
+}

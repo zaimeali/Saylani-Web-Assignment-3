@@ -915,3 +915,25 @@ object.category-card-svg{
 .categories-card-feature{
     margin-top: 5px !important;
 }
+
+
+/* Offers */
+.offer-banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://c8.alamy.com/comp/CEWAB8/special-offers-and-half-price-signs-in-morrisons-supermarket-england-CEWAB8.jpg");
+    height: 300px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.no-margin-bottom{
+    padding-bottom: 0px !important;
+    padding-top: 15px !important;
+}
+
+.m-lrb{
+    margin-bottom: 10px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
