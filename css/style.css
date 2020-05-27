@@ -937,3 +937,44 @@ object.category-card-svg{
     margin-left: 15px !important;
     margin-right: 15px !important;
 }
+
+
+/* Stationery */
+.stat-banner-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://lh3.googleusercontent.com/proxy/PpaZ-i2wZVIwC2I6EttxZs_DCxmUjd2KoxsG6D8DwbwMVlxEFeGYMCCj78fQ8HQxmdXPsJmbBG_LEzUx9gJu3jPKiE0fGCz23xr0Z3mw1EjZ4htjQgr0D7p9rRh2q5dizyFC8FoY5n084GEMnkWIVMs");
+    height: 300px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Mobile */
+.mobile-banner-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_m6kdQSKnx9BBvF63iN6rDV-wegswdUzRl1KzC8hLWl_uy34Z&usqp=CAU");
+    height: 300px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Games */
+.game-banner-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://preview.redd.it/u0r1mimsjcwy.jpg?width=960&crop=smart&auto=webp&s=37622ab0ad09775787d1feb5e51bd12101de0ef3");
+    height: 300px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Gift */
+.gift-banner-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://encorebaby-wpengine.netdna-ssl.com/wp-content/uploads/2011/07/Gift-Box-Border-w-Logo.jpg");
+    height: 300px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
