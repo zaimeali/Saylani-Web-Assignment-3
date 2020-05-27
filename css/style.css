@@ -846,6 +846,11 @@ object.category-card-svg{
     text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.548);
 }
 
+.categories{
+    margin-bottom: 40px !important;
+    margin-top: 20px !important;
+}
+
 .category-content{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -882,14 +887,23 @@ object.category-card-svg{
     padding: 4px 20px !important;
     font-weight: 600 !important;
     font-size: 18px !important;
+    margin-top: 30px !important;
+}
+
+.categories-card-content{
+    margin-top: 10px !important;
 }
 
 .categories-card-body{
     height: auto !important;
 }
 
-.categories-card-title:hover{
+.categories-card:hover .categories-card-title{
     color: #ba1414 !important;
+}
+
+.categories-card:hover .dropdown-divider{
+    border-top: 1px solid #ba1414;
 }
 
 .categories-card-title{
