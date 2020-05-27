@@ -255,6 +255,14 @@ object{
     font-weight: 600;
 }
 
+.recommend-product-click{
+    color: unset;
+}
+
+.recommend-product-click:hover{
+    text-decoration: none;
+}
+
 .recommend-item-image{
     padding: 0 15px;
 }
