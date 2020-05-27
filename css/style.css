@@ -853,8 +853,51 @@ object.category-card-svg{
 
 .category-page-heading{
     color: #2a2a2ad8;
-    font-size: 32px !important;
+    font-size: 36px !important;
     font-weight: 700 !important;
 
     margin-bottom: 20px !important;
+}
+
+.category-page-image{
+    width: 42px !important;
+    margin-top: -9px !important;
+}
+
+.category-page-heading::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    height: 0.5em;
+    width: 320px;
+    border-top: 3px solid rgba(0, 0, 0, 0.336);
+    z-index: -1;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.category-button{
+    padding: 4px 20px !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+}
+
+.categories-card-body{
+    height: auto !important;
+}
+
+.categories-card-title:hover{
+    color: #ba1414 !important;
+}
+
+.categories-card-title{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-bottom: 1px !important;
+}
+
+.categories-card-feature{
+    margin-top: 5px !important;
 }
