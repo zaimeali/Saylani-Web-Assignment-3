@@ -1212,6 +1212,60 @@ object.category-card-svg{
     color: #d42626 !important;
 }
 
+.first-sec div ul li{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: rgb(58, 58, 58);
+}
+
+.second-sec div{
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: rgb(92, 92, 92);
+}
+
+.third-sec{
+    margin-top: 10px !important;
+}
+
+.third-sec div strong{
+    font-size: 18px !important;
+}
+
+.third-sec div ul{
+    margin-bottom: 8px !important;
+}
+
+.third-sec div ul li{
+    font-size: 14px !important;
+    color: rgb(58, 58, 58);
+}
+
+.fourth{
+    margin-top: 12px !important;
+}
+
+.specs{
+    font-size: 18px !important;
+}
+
+.fourth-para{
+    margin-bottom: 15px !important;
+}
+
+.fourth-para p{
+    display: block;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+.feature-header{
+    font-size: 18px !important;   
+}
+
 @media (max-width: 767px){
     .del-icon{
         width: 10% !important;
