@@ -986,3 +986,67 @@ object.category-card-svg{
     background-size: cover;
     position: relative;
 }
+
+
+/* Product and Offer Item */
+.body-product{
+    background: rgba(255,255,255,1);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+}
+
+.main-product{
+
+}
+
+.pro-pic{
+
+}
+
+.pro-desc{
+
+}
+
+.product-item{
+    border-radius: 15px !important;
+    background-color: white !important;
+}
+
+.product-item:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.product-item:hover .pro-title{
+    color: #7a1212;
+}
+
+.pro-title{
+    font-weight: 600 !important;
+    margin-bottom: 0 !important;
+}
+
+.pro-feature{
+    list-style-type: circle;
+}
+
+.pro-feature li{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: rgba(61, 61, 61, 0.904);
+}
+
+.ship-list{
+
+}
+
+.pro-amount{
+
+}
+
+.pro-price{
+
+}
+
+.pro-rating{
+    height: 16px !important;
+    cursor: pointer;
+}
