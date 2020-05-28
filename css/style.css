@@ -12,6 +12,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.height-auto{
+    height: auto !important;
+}
+
 /* Main Style */
 html, body{
     margin: 0;
@@ -1198,6 +1202,14 @@ object.category-card-svg{
 
 .del-ret-div{
     margin-top: 4px !important;
+}
+
+.pro-item-feature{
+
+}
+
+.red-text{
+    color: #d42626 !important;
 }
 
 @media (max-width: 767px){
