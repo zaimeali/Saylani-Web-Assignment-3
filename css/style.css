@@ -1078,3 +1078,11 @@ object.category-card-svg{
     line-height: 30px !important;
     margin-bottom: 0 !important;
 }
+
+.shipment_detail{
+    border-radius: 5px !important;
+}
+
+.shipment_detail:hover{
+    box-shadow: 0 0 3px rgba(33,33,33,.2); 
+}
