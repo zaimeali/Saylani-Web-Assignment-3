@@ -1,5 +1,16 @@
 /* Common Style */
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 /* Main Style */
 html, body{
@@ -217,9 +228,10 @@ object{
 }
 
 .image-banner{
-    height: 550px;
     width: 100%;
+    height: 550px !important;
 }
+
 
 /* Recommendation */
 .recommendation{
@@ -1047,6 +1059,22 @@ object.category-card-svg{
 }
 
 .pro-rating{
-    height: 16px !important;
+    height: 16px;
     cursor: pointer;
+}
+
+.rating{
+    height: 14px !important;
+}
+
+#qty{
+    margin-left: 5px !important;
+    width: 80% !important;
+}
+
+#qty_label{
+    display: flex;
+
+    line-height: 30px !important;
+    margin-bottom: 0 !important;
 }
