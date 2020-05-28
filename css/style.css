@@ -1027,6 +1027,10 @@ object.category-card-svg{
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
+.product-item:hover .pro-price{
+    color: #d42626 !important;
+}
+
 .product-item:hover .pro-title{
     color: #7a1212;
 }
@@ -1050,17 +1054,40 @@ object.category-card-svg{
 
 }
 
-.pro-amount{
+.del-brand{
+    color: #d42626;
+    cursor: pointer;
+}
 
+.del-share-icon{
+    cursor: pointer;
+    font-size: 20px !important;
+}
+
+.del-brand-div{
+    margin-top: 5px !important;
+}
+
+.pro-amount{
+    font-size: 14px !important;
+    color: #494949;
+    line-height: 24px !important;
 }
 
 .pro-price{
-
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 600;
+    color: #414141 !important;
 }
 
 .pro-rating{
     height: 16px;
     cursor: pointer;
+}
+
+.del-status{
+    margin-top: 10px !important;
 }
 
 .rating{
@@ -1072,11 +1099,18 @@ object.category-card-svg{
     width: 80% !important;
 }
 
+.del-stock{
+    font-weight: 600 !important;
+}
+
 #qty_label{
     display: flex;
 
     line-height: 30px !important;
     margin-bottom: 0 !important;
+
+    color: #494949;
+    font-size: 14px !important;
 }
 
 .shipment_detail{
@@ -1106,7 +1140,7 @@ object.category-card-svg{
 }
 
 .del-img{
-    height: 18px !important;
+    height: 22px !important;
     margin-top: 10px !important;
     margin-left: 10px !important;
 }
@@ -1157,6 +1191,14 @@ object.category-card-svg{
     display: none;
 }
 
+.del-ret{
+    font-size: 13px !important;
+    padding-left: 12px !important;
+}
+
+.del-ret-div{
+    margin-top: 4px !important;
+}
 
 @media (max-width: 767px){
     .del-icon{
@@ -1172,5 +1214,41 @@ object.category-card-svg{
         width: 60% !important;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+
+    .pro-title{
+        text-align: center !important;
+    }
+
+    .pro-feature{
+        margin-left: 20% !important;
+    }
+
+    .pro-amount{
+        text-align: center !important;
+        width: 100% !important;
+        font-size: 16px !important;
+    }
+
+    .pro-price{
+        font-size: 20px !important;
+    }
+
+    #qty_label{
+        font-size: 16px !important;
+        width: 50% !important;
+    }
+
+    #qty{
+        width: 50% !important;
+    }
+
+    .del-qty #qty_label{
+        margin: 5px auto !important;
+    }
+
+    .del-stock{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
     }
 }

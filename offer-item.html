@@ -117,7 +117,7 @@
                             <div class="col-md-4">
                                 <!-- Product Picture -->
                                 <div class="pro-pic">
-                                    <img src="img/items/gaming/gaming-item-1.jpg" height="280" alt="Gaming Item 1">
+                                    <img class="img-fluid" src="img/items/gaming/gaming-item-1.jpg" height="280" alt="Gaming Item 1">
                                 </div>
                             </div>
                             <div class="col-md-8">
@@ -126,20 +126,20 @@
                                     <h2 class="pro-title">GeForce RTX 2080 Ti</h2>
                                     <hr>
                                     <div class="row">
-                                        <div class="col-md-10">
+                                        <div class="col-md-10 col-sm-9 col-xs-6">
                                             <img class="pro-rating" src="img/icons/st2.png" alt="Clicked">
                                             <img class="pro-rating" src="img/icons/st2.png" alt="Clicked">
                                             <img class="pro-rating" src="img/icons/st2.png" alt="Clicked">
                                             <img class="pro-rating rating" src="img/icons/st1.png" alt="Not Clicked">
                                             <img class="pro-rating rating" src="img/icons/st1.png" alt="Not Clicked">
                                         </div>
-                                        <div class="col-md-2">
-                                            <i class="fa fa-share-alt"></i>
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <i class="fa fa-share-alt del-share-icon"></i>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <small class="text-muted">Brand: &nbsp;</small><small><span>Zotac</span></small>
+                                        <div class="col-md-4 del-brand-div">
+                                            <small class="text-muted">Brand: &nbsp;</small><small><span class="del-brand">Zotac</span></small>
                                         </div>
                                     </div>
                                     <hr>
@@ -150,15 +150,15 @@
                                         <li>Engine Clock Boost: 1665 MHz</li>
                                     </ul>
                                     <div class="dropdown-divider"></div>
-                                    <span class="pro-amount">
-                                        Price: <span class="pro-price">Rs.189,500</span>
-                                    </span>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="qty" id="qty_label">Quantity &nbsp; &nbsp;<input placeholder="0" value="0" class="form-control" id="qty" type="number" min="0"></label>
+                                    <div class="pro-amount">
+                                        Price: <span class="pro-price">&nbsp;Rs.189,500</span>
+                                    </div>
+                                    <div class="row del-status">
+                                        <div class="col-md-6 del-qty">
+                                            <label for="qty" id="qty_label">Quantity &nbsp; &nbsp; &nbsp;<input placeholder="0" value="0" class="form-control" id="qty" type="number" min="0"></label>
                                         </div>
                                         <div class="col-md-6">
-                                            <div id="green">
+                                            <div id="green" class="text-center del-stock">
                                                 In Stock
                                             </div>
                                         </div>
@@ -194,7 +194,7 @@
                                         </span>
                                         <div class="row del-pro-detail">
                                             <div class="col-md-1 col-sm-1 col-xs-1 del-icon">
-                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/pin.png" alt="Delivery Image">
+                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/location.png" alt="Delivery Image">
                                                 <img class="img-top del-img" src="img/icons/product/placeholder.png" alt="Focus Image">
                                             </div>
                                             <div class="col-md-10 col-sm-7 col-xs-7 del-icon-address">
@@ -208,20 +208,20 @@
                                         </span>
                                         <div class="row del-pro-detail">
                                             <div class="col-md-1 col-sm-1 col-xs-1 del-icon">
-                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/return.png" alt="Delivery Image">
-                                                <img class="img-top del-img" src="img/icons/product/return(1).png" alt="Focus Image">
+                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/return1.png" alt="Return Image">
+                                                <img class="img-top del-img" src="img/icons/product/return.png" alt="Focus Image">
                                             </div>
-                                            <div class="col-md-10 col-sm-7 col-xs-7">
-                                                7 Days Return
+                                            <div class="col-md-10 col-sm-7 col-xs-7 del-ret-div">
+                                                <span class="text-muted del-ret">7 Days Return</span>
                                             </div>
                                         </div>
                                         <div class="row del-pro-detail">
                                             <div class="col-md-1 col-sm-1 col-xs-1 del-icon">
-                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/pin.png" alt="Delivery Image">
-                                                <img class="img-top del-img" src="img/icons/product/placeholder.png" alt="Focus Image">
+                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/high-quality1.png" alt="Warranty Image">
+                                                <img class="img-top del-img" src="img/icons/product/high-quality.png" alt="Focus Image">
                                             </div>
-                                            <div class="col-md-10 col-sm-7 col-xs-7 del-icon-address">
-                                                <textarea id="address-del" class="del-address text-muted form-control" cols="20" rows="2" placeholder="Enter Address">Sindh, Karachi - Gulshan-e-Iqbal, Block 15</textarea>
+                                            <div class="col-md-10 col-sm-7 col-xs-7 del-ret-div">
+                                                <span class="text-muted del-ret">7 Days Return</span>
                                             </div>
                                         </div>
                                     </li>
@@ -230,17 +230,22 @@
                         </div>
                         <div class="row">
                             <!-- Ads -->
-                            <div class="col-md-10 offset-md-1 ads">
+                            <div class="col-md-10 offset-md-1 ads col-sm-6">
                                 <div class="card">
                                     <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 1">
                                 </div>
                             </div>
-                            <div class="col-md-10 offset-md-1 ads">
+                            <div class="col-md-10 offset-md-1 ads col-sm-6">
                                 <div class="card">
                                     <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 1">
                                 </div>
                             </div>
-                            <div class="col-md-10 offset-md-1 ads">
+                            <div class="col-md-10 offset-md-1 ads col-sm-6">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 1">
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-md-1 ads col-sm-6">
                                 <div class="card">
                                     <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 1">
                                 </div>
