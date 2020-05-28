@@ -1081,8 +1081,96 @@ object.category-card-svg{
 
 .shipment_detail{
     border-radius: 5px !important;
+    background-color: #ffffff73;
+    margin-bottom: 15px !important;
 }
 
 .shipment_detail:hover{
     box-shadow: 0 0 3px rgba(33,33,33,.2); 
+}
+
+.shipment-icon{
+    height: 36px !important;
+}
+
+.shipment-title{
+    font-size: 24px !important;
+    font-weight: 600 !important;
+}
+
+.ads{
+    margin-top: 10px !important;
+}
+
+.del-pro{
+}
+
+.del-img{
+    height: 18px !important;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+}
+
+.del-address{
+    font-size: 13px !important;
+    resize: none; 
+    overflow:hidden;
+    border: none !important;
+    border-radius: 6px !important;
+}
+
+.del-address:focus{
+    box-shadow: 0 0 10px rgba(33,33,33,.2) !important;
+    color: black !important;
+}
+
+.del-pro-detail{
+    margin-top: 2px !important;
+}
+
+.img-top{
+    display: none;
+    position: absolute;
+}
+
+.img-back{
+    /* position: absolute; */
+    /* top: 9px; */
+}
+
+#label-address{
+    cursor: pointer;
+    margin-bottom: 0 !important;
+}
+
+#address-del{
+    cursor: pointer;
+}
+
+.shipment_detail:hover .img-top{
+    display: inline;
+    position: relative;
+    /* top: 9px; */
+}
+
+.shipment_detail:hover .img-back{
+    display: none;
+}
+
+
+@media (max-width: 767px){
+    .del-icon{
+        width: 10% !important;
+    }
+
+    .del-icon-address{
+        width: 70% !important;
+    }
+
+    .ads{
+        margin-top: 20px !important;
+        width: 60% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }

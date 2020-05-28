@@ -185,24 +185,62 @@
                         <!-- Sidebar -->
                         <div class="row">
                             <!-- Shipment Details -->
-                            <div class="col-md-12 shipment_detail">
-                                <h3>Shipment Details</h3>
+                            <div class="offset-md-1 col-md-11 shipment_detail py-4">
+                                <h3 class="shipment-title">Shipment Details <img class="shipment-icon" src="img/icons/product/shipment.png" alt="Shipment Icon"></h3>
                                 <ul class="list-group ship-list">
                                     <li class="list-group-item">
                                         <span class="del-pro">
-                                            Delivery Option
+                                            Delivery Option <small class="text-muted"><label id="label-address" for="address-del">(change)</label></small>
                                         </span>
+                                        <div class="row del-pro-detail">
+                                            <div class="col-md-1 col-sm-1 col-xs-1 del-icon">
+                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/pin.png" alt="Delivery Image">
+                                                <img class="img-top del-img" src="img/icons/product/placeholder.png" alt="Focus Image">
+                                            </div>
+                                            <div class="col-md-10 col-sm-7 col-xs-7 del-icon-address">
+                                                <textarea id="address-del" class="del-address text-muted form-control" cols="20" rows="2" placeholder="Enter Address">Sindh, Karachi - Gulshan-e-Iqbal, Block 15</textarea>
+                                            </div>
+                                        </div>
                                     </li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
+                                    <li class="list-group-item">
+                                        <span class="del-pro">
+                                            Return &amp; Warranty
+                                        </span>
+                                        <div class="row del-pro-detail">
+                                            <div class="col-md-1 col-sm-1 col-xs-1 del-icon">
+                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/return.png" alt="Delivery Image">
+                                                <img class="img-top del-img" src="img/icons/product/return(1).png" alt="Focus Image">
+                                            </div>
+                                            <div class="col-md-10 col-sm-7 col-xs-7">
+                                                7 Days Return
+                                            </div>
+                                        </div>
+                                        <div class="row del-pro-detail">
+                                            <div class="col-md-1 col-sm-1 col-xs-1 del-icon">
+                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/pin.png" alt="Delivery Image">
+                                                <img class="img-top del-img" src="img/icons/product/placeholder.png" alt="Focus Image">
+                                            </div>
+                                            <div class="col-md-10 col-sm-7 col-xs-7 del-icon-address">
+                                                <textarea id="address-del" class="del-address text-muted form-control" cols="20" rows="2" placeholder="Enter Address">Sindh, Karachi - Gulshan-e-Iqbal, Block 15</textarea>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="row">
                             <!-- Ads -->
-                            <div class="col-md-12">
+                            <div class="col-md-10 offset-md-1 ads">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 1">
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-md-1 ads">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 1">
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-md-1 ads">
                                 <div class="card">
                                     <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 1">
                                 </div>

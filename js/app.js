@@ -59,3 +59,12 @@ function removeFromWishlist(id) {
 function addToCart(){
     alert('Item is Added into the Cart');
 }
+
+// Offer & Product
+function hover(path) {
+    document.getElementsByClassName('shipment-icon').setAttribute('src', path);
+}
+
+function unhover(path) {
+    document.getElementsByClassName('shipment-icon').setAttribute('src', path);
+}
