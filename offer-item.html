@@ -258,9 +258,96 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="comments mt-4 mb-1">
                             <!-- Comments -->
-                            Comments
+                            <div class="container">
+                                <div class="row py-3 px-2">
+                                    <div class="col-md-10">
+                                        <label for="comment" class="label-comment text-muted">Leave a Comment..</label>
+                                        <textarea class="form-control comment-textarea" name="" id="comment" rows="4" placeholder="Enter Comment.."></textarea>
+                                    </div>
+                                    <div class="col-md-2 pt-1">
+                                        <button class="btn btn-dark btn-lg btn-custom btn-secondary mt-5" type="button" data-toggle="tooltip" data-placement="bottom" title="Comment">
+                                            <img class="btn-comment" src="img/icons/product/chat.png" alt="Submit">
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr class="divider">
+                                <div class="row pt-2 pb-2" id="comment_1">
+                                    <div class="col-md-12">
+                                        <div class="container comment-sec">
+                                            <div class="row">
+                                                <div class="col-md-12 pt-3 pb-2">
+                                                    <div class="container comment-display py-3">
+                                                        <h6>Very Nice Product.</h6>
+                                                        <hr id="comment-style" class="m-y-0">
+                                                        <small class="text-muted">~ comment by <span class="comment-author red-text">Zaime Ali</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 offset-md-9 pb-2 pt-1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-sm btn-info btn-comment-sec" onclick="reply()">
+                                                                Reply
+                                                                <svg class="bi bi-reply-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M9.079 11.9l4.568-3.281a.719.719 0 0 0 0-1.238L9.079 4.1A.716.716 0 0 0 8 4.719V6c-1.5 0-6 0-7 8 2.5-4.5 7-4 7-4v1.281c0 .56.606.898 1.079.62z"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-sm btn-danger btn-comment-sec" style="margin-left: 8px;" onclick="deleteComment('comment_1')">
+                                                                Delete
+                                                                <svg class="bi bi-trash-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-2 pb-3" id="comment_2">
+                                    <div class="col-md-12">
+                                        <div class="container comment-sec">
+                                            <div class="row">
+                                                <div class="col-md-12 pt-3 pb-2">
+                                                    <div class="container comment-display py-3">
+                                                        <h6>Expensive GPU.</h6>
+                                                        <hr id="comment-style" class="m-y-0">
+                                                        <small class="text-muted">~ comment by <span class="comment-author red-text">Abdul Raffay</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 offset-md-9 pb-2 pt-1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-sm btn-info btn-comment-sec" onclick="reply()">
+                                                                Reply
+                                                                <svg class="bi bi-reply-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M9.079 11.9l4.568-3.281a.719.719 0 0 0 0-1.238L9.079 4.1A.716.716 0 0 0 8 4.719V6c-1.5 0-6 0-7 8 2.5-4.5 7-4 7-4v1.281c0 .56.606.898 1.079.62z"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-sm btn-danger btn-comment-sec" style="margin-left: 8px;" onclick="deleteComment('comment_2')">
+                                                                Delete
+                                                                <svg class="bi bi-trash-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">

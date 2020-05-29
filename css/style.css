@@ -1266,6 +1266,79 @@ object.category-card-svg{
     font-size: 18px !important;   
 }
 
+.comments{
+    background-color: #fdfdfd;
+    border-radius: 10px !important;
+}
+
+.comments:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2) !important;
+}
+
+.btn-comment{
+    height: 24px !important;
+    margin-top: -4px !important;
+}
+
+.btn-custom{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.label-comment{
+    display: block !important;
+}
+
+.comment-textarea{
+    resize: none; 
+    overflow: hidden;
+    font-size: 14px !important;
+    color: rgba(70, 70, 70, 0.76);
+}
+
+.comment-textarea:focus{
+    box-shadow: 0 0 10px rgba(33,33,33,.2) !important;
+    border-color: rgba(73, 73, 73, 0.3) !important;
+}
+
+.divider{
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+
+.comment-sec{
+    background-color: #ededed13 !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(73, 73, 73, 0.1) !important;
+}
+
+.comment-display{
+    background-color: #ededed7e !important;
+    border-radius: 8px !important;
+    border: 0.5px solid rgba(187, 187, 187, 0.281);
+}
+
+.m-y-0{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#comment-style{
+    border-top: 1px solid rgba(136, 136, 136, 0.1);
+}
+
+.btn-comment-sec{
+    display: flex !important;
+}
+
+.btn-comment-sec svg{
+    margin-top: 4px;
+    margin-left: 3px !important;
+}
+
+.comment-author{
+}
+
 @media (max-width: 767px){
     .del-icon{
         width: 10% !important;

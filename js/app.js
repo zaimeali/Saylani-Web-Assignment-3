@@ -61,10 +61,11 @@ function addToCart(){
 }
 
 // Offer & Product
-function hover(path) {
-    document.getElementsByClassName('shipment-icon').setAttribute('src', path);
+
+function reply(){
+    alert("You Replied to this chat");
 }
 
-function unhover(path) {
-    document.getElementsByClassName('shipment-icon').setAttribute('src', path);
+function deleteComment(id){
+    document.getElementById(id).style.display = 'none';
 }
