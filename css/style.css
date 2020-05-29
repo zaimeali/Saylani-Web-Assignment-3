@@ -1283,6 +1283,8 @@ object.category-card-svg{
 .btn-custom{
     padding-left: 2rem !important;
     padding-right: 2rem !important;
+
+    margin-top: 3rem !important;
 }
 
 .label-comment{
@@ -1389,5 +1391,27 @@ object.category-card-svg{
     .del-stock{
         margin-top: 10px !important;
         margin-bottom: 10px !important;
+    }
+
+    .btn-custom{
+        margin-top: 5px !important;
+        float: right !important;
+    }
+
+    .comments{
+        border: 1px solid rgba(136, 136, 136, 0.2);
+    }
+
+    .deleteButton{
+        margin-left: 0 !important;
+        margin-top: 2px !important;
+    }
+
+    .btn-comment-sec{
+        float: right !important;
+    }
+
+    .shipment_detail{
+        margin-top: 15px !important;
     }
 }
