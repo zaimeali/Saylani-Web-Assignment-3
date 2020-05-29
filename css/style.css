@@ -1434,23 +1434,31 @@ object.category-card-svg{
     text-transform: uppercase;
     font-weight: 700;
 }
-
+/* 
 .about-us-head::after{
-    content:"";
+    content:"" !important;
     position: absolute;
     left: 0;
     right: 0;
     top: 40px;
     height: 0.5em;
     width: 320px;
-    border-top: 3px solid rgba(0, 0, 0, 0.336);
+    border-top: 3px solid rgba(0, 0, 0, 0.897);
     z-index: -1;
     margin-left: auto !important;
     margin-right: auto !important;
-}
+} */
 
 .first-paragraph{
     font-size: 15px !important;
     font-weight: 500 !important;
     color: rgba(36, 36, 36, 0.85);
+}
+
+.about-body{
+    border-radius: 15px !important;
+}
+
+.about-body:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2) !important;
 }
