@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>ZMart | Product</title>
+        <title>ZMart | Item</title>
 
         <!-- Site Icon -->
         <link rel="shortcut icon" href="img/site-icon/site.ico" type="image/x-icon">
@@ -108,45 +108,322 @@
         </nav>
 
 
-        <div class="main-product">
+        <div class="main-product my-5 py-2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                        <div class="row">
+                        <div class="row product-item">
                             <!-- Product Detail -->
                             <div class="col-md-4">
                                 <!-- Product Picture -->
-                                Product Picture
+                                <div class="pro-pic">
+                                    <img class="img-fluid" src="img/items/gaming/gaming-item-1.jpg" height="280" alt="Gaming Item 1">
+                                </div>
                             </div>
                             <div class="col-md-8">
                                 <!-- Product Description -->
-                                Product Description
+                                <div class="pro-desc pt-4 pl-3">
+                                    <h2 class="pro-title">GeForce RTX 2080 Ti</h2>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-10 col-sm-9 col-xs-6">
+                                            <img class="pro-rating" src="img/icons/st2.png" alt="Clicked">
+                                            <img class="pro-rating" src="img/icons/st2.png" alt="Clicked">
+                                            <img class="pro-rating" src="img/icons/st2.png" alt="Clicked">
+                                            <img class="pro-rating rating" src="img/icons/st1.png" alt="Not Clicked">
+                                            <img class="pro-rating rating" src="img/icons/st1.png" alt="Not Clicked">
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <i class="fa fa-share-alt del-share-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 del-brand-div">
+                                            <small class="text-muted">Brand: &nbsp;</small><small><span class="del-brand">Zotac</span></small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <ul class="pro-feature">
+                                        <li>CUDA cores 4352</li>
+                                        <li>Display size (diagonal) 68.58 cm (27")</li>
+                                        <li>11GB GDDR6 352-bit</li>
+                                        <li>Engine Clock Boost: 1665 MHz</li>
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="pro-amount">
+                                        Price: <span class="pro-price">&nbsp;Rs.189,500</span>
+                                    </div>
+                                    <div class="row del-status">
+                                        <div class="col-md-6 del-qty">
+                                            <label for="qty" id="qty_label">Quantity &nbsp; &nbsp; &nbsp;<input placeholder="0" value="0" class="form-control" id="qty" type="number" min="0"></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div id="green" class="text-center del-stock">
+                                                In Stock
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 offset-md-1">
+                                            <button class="btn btn-info btn-lg btn-block" onclick="addToCart()">Add to Wishlist &nbsp; <i class="fa fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <!-- Reviews -->
-                            Reviews
+                        <div class="row pro-item-feature my-4">
+                            <!-- Product Feature -->
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <h5 class="card-header feature-header">Product details of <span class="red-text">ZOTAC GAMING GeForce RTX 2080</span></h5>
+                                    <div class="card-body height-auto" style="height: auto !important;">
+                                        <div class="row first-sec">
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>2944 Cores</li>
+                                                    <li>Boost: 1905 MHz</li>
+                                                    <li>New Turing Architecture</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>8GB 256-bit GDDR6</li>
+                                                    <li>Virtual Reality Ready 4K Ready</li>
+                                                    <li>3 x Display Port 1.4, 1 X HDMi 2.0b, 1 x USB Type-C</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row second-sec">
+                                            <div class="col-md-12">
+                                                The all-new generation of ZOTAC GAMING GeForce graphics cards are here. Based on the 
+                                                new NVIDIA Turing architecture, it’s packed with more cores and all-new 
+                                                GDDR6 ultra-fast memory. Integrated with more smart and optimized technologies, 
+                                                get ready to get fast and game strong like never before.
+                                            </div>
+                                        </div>
+                                        <div class="row third-sec">
+                                            <div class="col-md-12">
+                                                <strong>Features:</strong>
+                                                <ul>
+                                                    <li>Ice Storm 2.0</li>
+                                                    <li>Freeze Fan Stop</li>
+                                                    <li>OC Scanner</li>
+                                                    <li>SPECTRA 2.0 Lighting System</li>
+                                                    <li>Active Fan Control</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row fourth-sec">
+                                            <div class="col-md-12">
+                                                <strong class="specs">Specifications of ZOTAC GAMING GeForce RTX 2080 AMP Extreme ZT-T20800B-10P</strong>
+                                                <div class="container fourth">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="row fourth-para">
+                                                                <p class="text-muted">Brand</p>
+                                                                <br>
+                                                                <p>Zotac</p>
+                                                            </div>
+                                                            <div class="row fourth-para">
+                                                                <p class="text-muted">GPU</p>
+                                                                <br>
+                                                                <p>Zotac</p>
+                                                            </div>
+                                                            <div class="row fourth-para">
+                                                                <p class="text-muted">Model</p>
+                                                                <br>
+                                                                <p>ZT-T20800B-10P</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="row fourth-para">
+                                                                <p class="text-muted">SKU</p>
+                                                                <br>
+                                                                <p>101805951_PK-1247448271</p>
+                                                            </div>
+                                                            <div class="row fourth-para">
+                                                                <p class="text-muted">Output Interface</p>
+                                                                <br>
+                                                                <p>Not Specified</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
+                        <div class="comments mt-4 mb-1">
                             <!-- Comments -->
-                            Comments
+                            <div class="container">
+                                <div class="row py-3 px-2">
+                                    <div class="col-md-10">
+                                        <label for="comment" class="label-comment text-muted">Leave a Comment..</label>
+                                        <textarea class="form-control comment-textarea" name="" id="comment" rows="4" placeholder="Enter Comment.."></textarea>
+                                    </div>
+                                    <div class="col-md-2 pt-1">
+                                        <button class="btn btn-dark btn-lg btn-custom btn-secondary" type="button" data-toggle="tooltip" data-placement="bottom" title="Comment">
+                                            <img class="btn-comment" src="img/icons/product/chat.png" alt="Submit">
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr class="divider">
+                                <div class="row pt-2 pb-2" id="comment_1">
+                                    <div class="col-md-12">
+                                        <div class="container comment-sec">
+                                            <div class="row">
+                                                <div class="col-md-12 pt-3 pb-2">
+                                                    <div class="container comment-display py-3">
+                                                        <h6>Very Nice Product.</h6>
+                                                        <hr id="comment-style" class="m-y-0">
+                                                        <small class="text-muted">~ comment by <span class="comment-author red-text">Zaime Ali</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 offset-md-9 pb-2 pt-1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-sm btn-info btn-comment-sec" onclick="reply()">
+                                                                Reply
+                                                                <svg class="bi bi-reply-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M9.079 11.9l4.568-3.281a.719.719 0 0 0 0-1.238L9.079 4.1A.716.716 0 0 0 8 4.719V6c-1.5 0-6 0-7 8 2.5-4.5 7-4 7-4v1.281c0 .56.606.898 1.079.62z"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-sm btn-danger btn-comment-sec deleteButton" style="margin-left: 8px;" onclick="deleteComment('comment_1')">
+                                                                Delete
+                                                                <svg class="bi bi-trash-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-2 pb-3" id="comment_2">
+                                    <div class="col-md-12">
+                                        <div class="container comment-sec">
+                                            <div class="row">
+                                                <div class="col-md-12 pt-3 pb-2">
+                                                    <div class="container comment-display py-3">
+                                                        <h6>Expensive GPU.</h6>
+                                                        <hr id="comment-style" class="m-y-0">
+                                                        <small class="text-muted">~ comment by <span class="comment-author red-text">Abdul Raffay</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 offset-md-9 pb-2 pt-1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-sm btn-info btn-comment-sec" onclick="reply()">
+                                                                Reply
+                                                                <svg class="bi bi-reply-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M9.079 11.9l4.568-3.281a.719.719 0 0 0 0-1.238L9.079 4.1A.716.716 0 0 0 8 4.719V6c-1.5 0-6 0-7 8 2.5-4.5 7-4 7-4v1.281c0 .56.606.898 1.079.62z"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-sm btn-danger btn-comment-sec deleteButton" style="margin-left: 8px;" onclick="deleteComment('comment_2')">
+                                                                Delete
+                                                                <svg class="bi bi-trash-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <!-- Sidebar -->
                         <div class="row">
                             <!-- Shipment Details -->
-                            Shipment Details
+                            <div class="offset-md-1 col-md-11 shipment_detail py-4">
+                                <h3 class="shipment-title">Shipment Details <img class="shipment-icon" src="img/icons/product/shipment.png" alt="Shipment Icon"></h3>
+                                <ul class="list-group ship-list">
+                                    <li class="list-group-item">
+                                        <span class="del-pro">
+                                            Delivery Option <small class="text-muted"><label id="label-address" for="address-del">(change)</label></small>
+                                        </span>
+                                        <div class="row del-pro-detail">
+                                            <div class="col-md-1 col-sm-1 col-xs-1 del-icon">
+                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/location.png" alt="Delivery Image">
+                                                <img class="img-top del-img" src="img/icons/product/placeholder.png" alt="Focus Image">
+                                            </div>
+                                            <div class="col-md-10 col-sm-7 col-xs-7 del-icon-address">
+                                                <textarea id="address-del" class="del-address text-muted form-control" cols="20" rows="2" placeholder="Enter Address">Sindh, Karachi - Gulshan-e-Iqbal, Block 15</textarea>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="del-pro">
+                                            Return &amp; Warranty
+                                        </span>
+                                        <div class="row del-pro-detail">
+                                            <div class="col-md-1 col-sm-1 col-xs-1 del-icon">
+                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/return1.png" alt="Return Image">
+                                                <img class="img-top del-img" src="img/icons/product/return.png" alt="Focus Image">
+                                            </div>
+                                            <div class="col-md-10 col-sm-7 col-xs-7 del-ret-div">
+                                                <span class="text-muted del-ret">7 Days Return</span>
+                                            </div>
+                                        </div>
+                                        <div class="row del-pro-detail">
+                                            <div class="col-md-1 col-sm-1 col-xs-1 del-icon">
+                                                <img id="img-icon" class="del-img img-back" src="img/icons/product/high-quality1.png" alt="Warranty Image">
+                                                <img class="img-top del-img" src="img/icons/product/high-quality.png" alt="Focus Image">
+                                            </div>
+                                            <div class="col-md-10 col-sm-7 col-xs-7 del-ret-div">
+                                                <span class="text-muted del-ret">7 Days Return</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="row">
                             <!-- Ads -->
-                            Ads
+                            <div class="col-md-10 offset-md-1 ads col-sm-6">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 1">
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-md-1 ads col-sm-6">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 2">
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-md-1 ads col-sm-6">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 3">
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-md-1 ads col-sm-6">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/100" class="card-img-top" alt="100 by 100 Ad 4">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
         
         <!-- Footer -->

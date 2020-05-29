@@ -1414,4 +1414,8 @@ object.category-card-svg{
     .shipment_detail{
         margin-top: 15px !important;
     }
+
+    .product-item{
+        border: 1px solid rgba(136, 136, 136, 0.2);
+    }
 }
