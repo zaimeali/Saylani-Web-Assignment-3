@@ -1419,3 +1419,38 @@ object.category-card-svg{
         border: 1px solid rgba(136, 136, 136, 0.2);
     }
 }
+
+
+/* About us */
+.banner-about{
+}
+
+.about-us-icon{
+    height: 32px !important;
+    margin-top: -14px !important;
+}
+
+.about-us-head{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.about-us-head::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    height: 0.5em;
+    width: 320px;
+    border-top: 3px solid rgba(0, 0, 0, 0.336);
+    z-index: -1;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.first-paragraph{
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: rgba(36, 36, 36, 0.85);
+}
